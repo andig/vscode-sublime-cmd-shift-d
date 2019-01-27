@@ -25,10 +25,10 @@
     "icon": "sublime_keyboard_with_padding.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Microsoft/vscode-sublime-cmd-shift-d.git"
+        "url": "https://github.com/andig/vscode-sublime-cmd-shift-d.git"
     },
     "bugs": {
-        "url": "https://github.com/Microsoft/vscode-sublime-cmd-shift-d/issues"
+        "url": "https://github.com/andig/vscode-sublime-cmd-shift-d/issues"
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
