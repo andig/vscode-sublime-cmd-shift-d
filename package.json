@@ -1,0 +1,56 @@
+{
+    "name": "sublime-cmd-shift-d",
+    "displayName": "Cmd-Shift-D Sublime Key Binding for VS Code",
+    "description": "Cmd-Shift-D Sublime Key Binding for VS Code",
+    "version": "1.0.0",
+    "publisher": "andig",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "keywords": [
+        "keymap",
+        "Cmd-Shift-D",
+        "Ctrl-Shift-D",
+        "Sublime Text"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "preview": false,
+    "icon": "sublime_keyboard_with_padding.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Microsoft/vscode-sublime-cmd-shift-d.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Microsoft/vscode-sublime-cmd-shift-d/issues"
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^7.0.43",
+        "typescript": "^2.0.3",
+        "vscode": "^1.1.22"
+    },
+    "contributes": {
+        "keybindings": [
+            {
+                "mac": "cmd+shift+d",
+                "win": "ctrl+shift+d",
+                "linux": "ctrl+shift+d",
+                "key": "ctrl+shift+d",
+                "command": "extension.duplicate",
+                "when": "editorFocus"
+            }
+        ]
+    }
+}
