@@ -18,10 +18,15 @@ function hasActiveSelection(editor: vscode.TextEditor): boolean {
 }
 
 function duplicateWithSelection(editor: vscode.TextEditor) {
-    var sel = editor.selection; // remember the selection before updating
+    var selections = editor.selections; // remember the selection before updating
     editor.edit(edit => {
-        edit.insert(sel.active, editor.document.getText(sel));
+        selections.forEach(sel => {
+            console.log(sel);
+            edit.insert(sel.active, editor.document.getText(sel));
+        });
     }).then(() => {
-        editor.selection = new vscode.Selection(sel.active, editor.selection.active);
+        editor.selections = selections.map((sel,i) => {
+            return new vscode.Selection(sel.active, editor.selections[i].active);
+        });
     })
 }

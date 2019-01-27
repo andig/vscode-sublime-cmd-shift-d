@@ -44,7 +44,7 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.duplicate",
+                "command": "extension.sublimeDuplicate",
                 "title": "Sublime Text: Cmd-Shift-D"
             }
         ],
@@ -54,7 +54,7 @@
                 "win": "ctrl+shift+d",
                 "linux": "ctrl+shift+d",
                 "key": "ctrl+shift+d",
-                "command": "extension.duplicate",
+                "command": "extension.sublimeDuplicate",
                 "when": "editorFocus"
             }
         ]
