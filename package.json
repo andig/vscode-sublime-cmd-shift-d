@@ -18,7 +18,7 @@
         "Sublime Text"
     ],
     "activationEvents": [
-        "*"
+        "onCommand:extension.duplicate"
     ],
     "main": "./out/extension",
     "preview": false,
@@ -42,6 +42,12 @@
         "vscode": "^1.1.22"
     },
     "contributes": {
+        "commands": [
+            {
+                "command": "extension.duplicate",
+                "title": "Sublime Text: Cmd-Shift-D"
+            }
+        ],
         "keybindings": [
             {
                 "mac": "cmd+shift+d",
