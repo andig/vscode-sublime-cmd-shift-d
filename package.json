@@ -2,7 +2,7 @@
     "name": "sublime-cmd-shift-d",
     "displayName": "Cmd-Shift-D Sublime Key Binding for VS Code",
     "description": "Cmd-Shift-D Sublime Key Binding for VS Code",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "andig",
     "license": "MIT",
     "engines": {
