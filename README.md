@@ -12,5 +12,9 @@ This plugin replaces the default VS Code behaviour for Cmd-Shift-D which trigger
 - duplicate inline instead of duplicating the entire line if the initial selection is not a multi-line selection
 - handling multi-selection
 
+**NOTE**
+
+If `Cmd-Shift-D` doesn't work for you (i.e. unexpectedly always behaves like `copyLinesDownAction`) make to delete the default key binding by going to `Preferences: Open Key Bindings`.
+
 ## License
 [MIT](license.txt)
